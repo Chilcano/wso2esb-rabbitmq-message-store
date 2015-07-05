@@ -12,10 +12,11 @@ With this MS&MP we can implement different EIP related with messaging such as:
 </ul>
 
 For further information about EIP, I recommend the next pages:  
-<ol>
+<ul>
 <li><a target="_new" href="https://docs.wso2.com/display/IntegrationPatterns/Enterprise+Integration+Patterns+with+WSO2+ESB">https://docs.wso2.com/display/IntegrationPatterns/Enterprise+Integration+Patterns+with+WSO2+ESB</a>
 <li>
-</ol><a href="https://holisticsecurity.wordpress.com/2014/12/03/wso2-message-broker-vs-apache-qpid-messaging-eip/" target="_new">https://holisticsecurity.wordpress.com/2014/12/03/wso2-message-broker-vs-apache-qpid-messaging-eip/</a>
+<a href="https://holisticsecurity.wordpress.com/2014/12/03/wso2-message-broker-vs-apache-qpid-messaging-eip/" target="_new">https://holisticsecurity.wordpress.com/2014/12/03/wso2-message-broker-vs-apache-qpid-messaging-eip/</a>
+</ul>
 
 
 This is valid for:
