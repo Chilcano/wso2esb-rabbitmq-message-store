@@ -32,7 +32,9 @@ This is valid for:
 After downloading the code, execute the next commands:
 
 <pre>
+$ mkdir wso2esb-rabbitmq-message-store
 $ cd wso2esb-rabbitmq-message-store
+$ git pull https://github.com/Chilcano/wso2esb-rabbitmq-message-store.git
 $ mvn clean install
 $ mvn exec:java -Dexec.mainClass="com.chakray.chilcano.wso2.rabbitmq.sample.HelloRabbitMQ"
 </pre>
