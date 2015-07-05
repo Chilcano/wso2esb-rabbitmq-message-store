@@ -11,7 +11,12 @@ With this MS&MP we can implement different EIP related with messaging such as:
     <li>Throttling
 </ul>
 
-For further information about EIP, I recommend this page:  https://docs.wso2.com/display/IntegrationPatterns/Enterprise+Integration+Patterns+with+WSO2+ESB
+For further information about EIP, I recommend the next pages:  
+<ol>
+<li><a target="_new" href="https://docs.wso2.com/display/IntegrationPatterns/Enterprise+Integration+Patterns+with+WSO2+ESB">https://docs.wso2.com/display/IntegrationPatterns/Enterprise+Integration+Patterns+with+WSO2+ESB</a>
+<li>
+</ol><a href="https://holisticsecurity.wordpress.com/2014/12/03/wso2-message-broker-vs-apache-qpid-messaging-eip/" target="_new">https://holisticsecurity.wordpress.com/2014/12/03/wso2-message-broker-vs-apache-qpid-messaging-eip/</a>
+
 
 This is valid for:
 
@@ -25,31 +30,30 @@ This is valid for:
 
 After downloading the code, execute the next commands:
 
-<code>
+<pre>
 $ cd wso2esb-rabbitmq-message-store
 $ mvn clean install
 $ mvn exec:java -Dexec.mainClass="com.chakray.chilcano.wso2.rabbitmq.sample.HelloRabbitMQ"
-</code>
+</pre>
 
 <h3>How to deploy on WSO2 ESB</h3>
 
 Deploy the libraries:
 
 <ol>
-<li> Copy <i>hello_rabbitmq_jndi.properties, qpid-client-0.30.jar, qpid-common-0.30.jar, wso2esb-rabbitmq-msmp-0.1.jar</i> to %WSO2ESB_HOME%/repository/components/lib/ folder.
+<li> Copy <code>hello_rabbitmq_jndi.properties, qpid-client-0.30.jar, qpid-common-0.30.jar, wso2esb-rabbitmq-msmp-0.1.jar</code> to <code>%WSO2ESB_HOME%/repository/components/lib/</code> folder.
 <li> Restart WSO2 ESB
 </ol>
 
 Deploy the Synapse files for the Message Store and API samples:
 
 <ol>
-<li> In RabbitMQ side you need to create a queue and 2 routing keys. I recommend you use the <i>hello_rabbitmq_config_broker.json</i> and import it from the RabbitMQ web admin console.
-<li> Copy <i>HelloRabbitMQMsgStore1.xml</i> into %WSO2ESB_HOME%/repository/deployment/server/synapse-configs/default/message-stores/
-<LI> Copy <i>HelloRabbitMQRest1.xml</i> into %WSO2ESB_HOME%/repository/deployment/server/synapse-configs/default/api/
+<li> In RabbitMQ side you need to create a queue and 2 routing keys. I recommend you use the <code>hello_rabbitmq_config_broker.json</code> and import it from the RabbitMQ web admin console.
+<li> Copy <code>HelloRabbitMQMsgStore1.xml</code> into <code>%WSO2ESB_HOME%/repository/deployment/server/synapse-configs/default/message-stores/</code>
+<li> Copy <code>HelloRabbitMQRest1.xml</code> into <code>%WSO2ESB_HOME%/repository/deployment/server/synapse-configs/default/api/</code>
 </ol>
 
 WSO2 ESB automatically will deploy these 2 synapse files and after that you are ready to send a message to WSO2 ESB and store this message in RabbitMQ side.
-
 
 
 -end-
