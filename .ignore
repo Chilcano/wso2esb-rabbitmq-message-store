@@ -1,0 +1,11 @@
+gnores
+\.gitignore
+\.DS_Store
+\.classpath
+\.project
+\.settings
+\.dropbox.attr
+\.metadata/
+Servers/
+target/
+
