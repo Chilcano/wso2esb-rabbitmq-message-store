@@ -21,10 +21,11 @@ This is valid for:
 </ul>
 
 How to check the code:
-
+<code>
 $ cd wso2esb-rabbitmq-message-store
 $ mvn clean install
 $ mvn exec:java -Dexec.mainClass="com.chakray.chilcano.wso2.rabbitmq.sample.HelloRabbitMQ"
+</code>
 
 How to deploy on WSO2 ESB:
 
