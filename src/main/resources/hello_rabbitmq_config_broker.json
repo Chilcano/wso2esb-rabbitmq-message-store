@@ -1,0 +1,83 @@
+{  
+   "rabbit_version":"3.4.4",
+   "users":[
+      {  
+         "name":"usr_chk",
+         "password_hash":"CHANGE_ME",
+         "tags":"administrator"
+      }
+   ],
+   "vhosts":[  
+      {  
+         "name":"/CHAKRAY_POC"
+      }
+   ],
+   "permissions":[  
+      {  
+         "user":"usr_chk",
+         "vhost":"/CHAKRAY_POC",
+         "configure":".*",
+         "write":".*",
+         "read":".*"
+      },
+      {  
+         "user":"admin",
+         "vhost":"/CHAKRAY_POC",
+         "configure":".*",
+         "write":".*",
+         "read":".*"
+      }      
+   ],
+   "parameters":[  
+
+   ],
+   "policies":[  
+
+   ],
+   "queues":[  
+      {  
+         "name":"q.hello_1",
+         "vhost":"/CHAKRAY_POC",
+         "durable":true,
+         "auto_delete":false,
+         "arguments":{  
+
+         }
+      }
+   ],
+   "exchanges":[  
+      {  
+         "name":"chk.direct",
+         "vhost":"/CHAKRAY_POC",
+         "type":"direct",
+         "durable":true,
+         "auto_delete":false,
+         "internal":false,
+         "arguments":{  
+
+         }
+      }
+   ],
+   "bindings":[  
+      {  
+         "source":"chk.direct",
+         "vhost":"/CHAKRAY_POC",
+         "destination":"q.hello_1",
+         "destination_type":"queue",
+         "routing_key":"rk.hello_1",
+         "arguments":{  
+
+         }
+      },
+      {  
+         "source":"chk.direct",
+         "vhost":"/CHAKRAY_POC",
+         "destination":"q.hello_1",
+         "destination_type":"queue",
+         "routing_key":"q.hello_1",
+         "arguments":{  
+
+         }
+      }
+   ]
+}

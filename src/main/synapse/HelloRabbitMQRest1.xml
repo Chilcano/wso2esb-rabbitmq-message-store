@@ -1,0 +1,30 @@
+<api xmlns="http://ws.apache.org/ns/synapse" name="HelloRabbitMQRest1" context="/chakray/poc/message/store/rabbitmq">
+   <resource methods="GET">
+      <inSequence>
+         <log level="custom">
+            <property name="[HelloRabbitMQRest1]" value=" inSequence started."></property>
+         </log>
+         <property name="QUERY_STR_IN" expression="fn:substring($axis2:REST_URL_POSTFIX,2)"></property>
+         <property name="OUT_ONLY" value="true" scope="default" type="STRING"></property>
+         <property name="FORCE_SC_ACCEPTED" value="true" scope="axis2" type="STRING"></property>
+         <switch source="$ctx:QUERY_STR_IN">
+            <case regex="">
+               <property name="QUERY_STR_OUT" value="Hello RabbitMQ 3.4.4"></property>
+            </case>
+            <default>
+               <property name="QUERY_STR_OUT" expression="fn:concat('Hello ',$ctx:QUERY_STR_IN,' !!!')"></property>
+            </default>
+         </switch>
+         <payloadFactory media-type="json">
+            <format>{"message_in" : "$1"}</format>
+            <args>
+               <arg evaluator="xml" expression="$ctx:QUERY_STR_OUT"></arg>
+            </args>
+         </payloadFactory>
+         <store messageStore="HelloRabbitMQMsgStore1"></store>
+         <log level="custom">
+            <property name="[HelloRabbitMQRest1]" expression="fn:contact('The message was stored. [',$ctx:QUERY_STR_OUT),']'"></property>
+         </log>
+      </inSequence>
+   </resource>
+</api>

@@ -1,0 +1,10 @@
+<messageStore name="HelloRabbitMQMsgStore1" class="com.chakray.chilcano.wso2.rabbitmq.message.store.RabbitMQStore" xmlns="http://ws.apache.org/ns/synapse">
+   <parameter name="java.naming.factory.initial">org.apache.qpid.jndi.PropertiesFileInitialContextFactory</parameter>
+   <parameter name="java.naming.provider.url">repository/components/lib/hello_rabbitmq_jndi.properties</parameter>
+   <parameter name="store.jms.destinationPublisher">myJndiDestQueuePublisher1</parameter>
+   <parameter name="store.jms.destinationConsumer">myJndiDestQueueConsumer1</parameter>
+   <parameter name="store.jms.connection.factory">myRabbitMQConnectionFactory1</parameter>
+   <parameter name="store.jms.username">usr_chk</parameter>
+   <parameter name="store.jms.password">CHANGE_ME</parameter>
+   <parameter name="store.jms.JMSSpecVersion">1.1</parameter>
+</messageStore>
