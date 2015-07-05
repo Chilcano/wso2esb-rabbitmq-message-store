@@ -37,7 +37,7 @@ $ mvn clean install
 $ mvn exec:java -Dexec.mainClass="com.chakray.chilcano.wso2.rabbitmq.sample.HelloRabbitMQ"
 </pre>
 
-The <code>com.chakray.chilcano.wso2.rabbitmq.sample.HelloRabbitMQ<code> is a simple JMS client that publish and consume a message to/from RabbitMQ. This sample uses Apache Qpid client library, does not use RabbitMQ client libraries. To execute properly you should update the <code>hello_rabbitmq_jndi.properties</code> with your values.
+The <code>com.chakray.chilcano.wso2.rabbitmq.sample.HelloRabbitMQ</code> is a simple JMS client that publish and consume a message to/from RabbitMQ. This sample uses Apache Qpid client library, does not use RabbitMQ client libraries. To execute properly you should update the <code>hello_rabbitmq_jndi.properties</code> with your values.
 
 <h3>How to deploy on WSO2 ESB</h3>
 
