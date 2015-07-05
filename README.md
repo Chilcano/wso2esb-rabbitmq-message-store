@@ -29,7 +29,7 @@ This is valid for:
 
 <h3>How to check the sourcecode and configuration</h3>
 
-After downloading the code, execute the next commands:
+Follow the next commands:
 
 <pre>
 $ mkdir wso2esb-rabbitmq-message-store
