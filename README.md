@@ -21,7 +21,7 @@ This is valid for:
 
 - WSO2 ESB 4.8.1
 - RabbitMQ 3.4.4
--- Apache Qpid client 0.30
+- Apache Qpid client 0.30
 
 <h3>How to check the sourcecode and configuration</h3>
 
@@ -41,18 +41,14 @@ The <code>com.chakray.chilcano.wso2.rabbitmq.sample.HelloRabbitMQ</code> is a si
 
 Deploy the libraries:
 
-<ol>
-<li> Copy <code>hello_rabbitmq_jndi.properties, qpid-client-0.30.jar, qpid-common-0.30.jar, wso2esb-rabbitmq-msmp-0.1.jar</code> to <code>%WSO2ESB_HOME%/repository/components/lib/</code> folder.
-<li> Restart WSO2 ESB
-</ol>
+1. Copy <code>hello_rabbitmq_jndi.properties, qpid-client-0.30.jar, qpid-common-0.30.jar, wso2esb-rabbitmq-msmp-0.1.jar</code> to <code>%WSO2ESB_HOME%/repository/components/lib/</code> folder.
+2. Restart WSO2 ESB
 
 Deploy the Synapse files for the Message Store and API samples:
 
-<ol>
-<li> In RabbitMQ side you need to create a queue and 2 routing keys. I recommend you use the <code>hello_rabbitmq_config_broker.json</code> and import it from the RabbitMQ web admin console.
-<li> Copy <code>HelloRabbitMQMsgStore1.xml</code> into <code>%WSO2ESB_HOME%/repository/deployment/server/synapse-configs/default/message-stores/</code>
-<li> Copy <code>HelloRabbitMQRest1.xml</code> into <code>%WSO2ESB_HOME%/repository/deployment/server/synapse-configs/default/api/</code>
-</ol>
+1. In RabbitMQ side you need to create a queue and 2 routing keys. I recommend you use the <code>hello_rabbitmq_config_broker.json</code> and import it from the RabbitMQ web admin console.
+2. Copy <code>HelloRabbitMQMsgStore1.xml</code> into <code>%WSO2ESB_HOME%/repository/deployment/server/synapse-configs/default/message-stores/</code>
+3. Copy <code>HelloRabbitMQRest1.xml</code> into <code>%WSO2ESB_HOME%/repository/deployment/server/synapse-configs/default/api/</code>
 
 WSO2 ESB automatically will deploy these 2 synapse files and after that you are ready to send a message to WSO2 ESB and store this message in RabbitMQ side.
 
