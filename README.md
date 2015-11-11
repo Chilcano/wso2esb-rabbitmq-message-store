@@ -10,12 +10,9 @@ With this MS&MP we can implement different EIP related to messaging such as:
 - Throttling
 
 For further information about EIP, I recommend the next pages:  
-<ul>
-<li><a target="_new" href="https://docs.wso2.com/display/IntegrationPatterns/Enterprise+Integration+Patterns+with+WSO2+ESB">https://docs.wso2.com/display/IntegrationPatterns/Enterprise+Integration+Patterns+with+WSO2+ESB</a>
-<li>
+* <a target="_new" href="https://docs.wso2.com/display/IntegrationPatterns/Enterprise+Integration+Patterns+with+WSO2+ESB">https://docs.wso2.com/display/IntegrationPatterns/Enterprise+Integration+Patterns+with+WSO2+ESB</a>
+*
 <a href="https://holisticsecurity.wordpress.com/2014/12/03/wso2-message-broker-vs-apache-qpid-messaging-eip/" target="_new">https://holisticsecurity.wordpress.com/2014/12/03/wso2-message-broker-vs-apache-qpid-messaging-eip/</a>
-</ul>
-
 
 This is valid for:
 
@@ -41,7 +38,7 @@ The <code>com.chakray.chilcano.wso2.rabbitmq.sample.HelloRabbitMQ</code> is a si
 
 Deploy the libraries:
 
-1. Copy <code>hello_rabbitmq_jndi.properties, qpid-client-0.30.jar, qpid-common-0.30.jar, wso2esb-rabbitmq-msmp-0.1.jar</code> to <code>%WSO2ESB_HOME%/repository/components/lib/</code> folder.
+1. Copy `hello_rabbitmq_jndi.properties, qpid-client-0.30.jar, qpid-common-0.30.jar, wso2esb-rabbitmq-msmp-0.1.jar` to <code>%WSO2ESB_HOME%/repository/components/lib/</code> folder.
 2. Restart WSO2 ESB
 
 Deploy the Synapse files for the Message Store and API samples:
