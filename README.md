@@ -24,13 +24,13 @@ This is valid for:
 
 Follow the next commands:
 
-<pre>
+`
 $ mkdir wso2esb-rabbitmq-message-store
 $ cd wso2esb-rabbitmq-message-store
 $ git pull https://github.com/Chilcano/wso2esb-rabbitmq-message-store.git
 $ mvn clean install
 $ mvn exec:java -Dexec.mainClass="com.chakray.chilcano.wso2.rabbitmq.sample.HelloRabbitMQ"
-</pre>
+`
 
 The <code>com.chakray.chilcano.wso2.rabbitmq.sample.HelloRabbitMQ</code> is a simple JMS client that publish and consume a message to/from RabbitMQ. This sample uses Apache Qpid client library, does not use RabbitMQ client libraries. To execute properly you should update the <code>hello_rabbitmq_jndi.properties</code> with your values.
 
