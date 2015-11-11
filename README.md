@@ -19,11 +19,9 @@ For further information about EIP, I recommend the next pages:
 
 This is valid for:
 
-<ul>
-<li>WSO2 ESB 4.8.1
-<li>RabbitMQ 3.4.4
-<li>Apache Qpid client 0.30
-</ul>
+* WSO2 ESB 4.8.1
+* RabbitMQ 3.4.4
+* Apache Qpid client 0.30
 
 <h3>How to check the sourcecode and configuration</h3>
 
