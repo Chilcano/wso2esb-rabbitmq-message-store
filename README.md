@@ -1,5 +1,5 @@
 # wso2esb-rabbitmq-message-store
-<h2>WSO2 ESB Message Store and Message Processor implementation for RabbitMQ</h2>
+## WSO2 ESB Message Store and Message Processor implementation for RabbitMQ
 
 This Message Store and Message Processor (MS&MP) implements the way how to WSO2 ESB and RabbitMQ (or any Message Broker) should work.
 With this MS&MP we can implement different EIP related to messaging such as:
