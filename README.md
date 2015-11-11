@@ -4,12 +4,10 @@
 This Message Store and Message Processor (MS&MP) implements the way how to WSO2 ESB and RabbitMQ (or any Message Broker) should work.
 With this MS&MP we can implement different EIP related to messaging such as:
 
-<ul>
-    <li>Dead Letter Queue
-    <li>Wire Tap
-    <li>Retry Queue
-    <li>Throttling
-</ul>
+- Dead Letter Queue
+- Wire Tap
+- Retry Queue
+- Throttling
 
 For further information about EIP, I recommend the next pages:  
 <ul>
